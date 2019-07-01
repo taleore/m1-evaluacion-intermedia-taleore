@@ -13,7 +13,7 @@
     font-size: 16px;
     list-style-type: none;
     flex-direction:row;
-	flex-wrap:w;
+	flex-wrap: wrap;
     
 }
 .menu {
@@ -30,8 +30,11 @@
 
 .container {
     background-color: #3CDBC0 ; 
-    padding: 100%;
-   
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 .phrase {
@@ -40,12 +43,14 @@
     text-align: center;
     color: white;
     display: flex;
+    justify-content: center;
     text-align: center;
 
 }
 
 @media all and (min-width: 768px) {
 .menu {
+    
     display: flex;
     justify-content: space-between;
     margin: 0%;
